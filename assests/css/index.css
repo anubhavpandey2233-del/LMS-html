@@ -211,6 +211,7 @@ nav ul li a:hover {
 
 .herodata {
     padding-top: 17rem;
+    display: flex;
 }
 
 .containerleft {
@@ -245,12 +246,42 @@ nav ul li a:hover {
     display: inline-block;
     margin-top: 4rem;
     background-color: var(--secondary-color);
-    color:#13297A;
+    color: #13297A;
     font-size: 2rem;
     font-weight: 600;
     padding: 1.5rem 2rem;
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+   
 }
 
+.containerleft .btn::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+ 
+    background-color: rgba(102, 99, 99,.7);
+    transition: all 1s;
+  
+    transform-origin:center;
+     
+}
+.containerleft .btn:hover::before{
+    /* transform: rotate(0deg); */
+      transform: translate(-50%,-50%);
+} 
+.containerright{
+    width: 50%;
+    margin-left: 10rem;
+}
+.containerright img{
+    width: 100%;
+    display: block;
+}
 
 /**************************************************/
+  
