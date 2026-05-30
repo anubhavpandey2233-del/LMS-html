@@ -212,11 +212,44 @@ nav ul li a:hover {
 }
 
 .herodata {
-    padding-top: 17rem;
+    padding-top: 8rem;
     height: 100vh;
+    position: relative;
 }
+.containerleft{
+    margin-top: 7rem;
+    position: relative;
+ }
+/*.containerleft .lg {
+    position: relative;
+    top: 6rem;
+    left: -9rem;
+    width: 10rem;
+    height: 10rem;
+    
+}
+.containerleft .lg::before{
+    content: '';
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    border: 2px dotted var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: rotate 4.5s linear infinite;
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+ */
 
-
+.containerleft .lg .logo {
+    width: 7.5rem;
+    padding: 1px;
+}
 
 .containerleft .favcou {
     margin-top: 5rem;
@@ -224,20 +257,19 @@ nav ul li a:hover {
     color: var(--primary-color);
 }
 
-.containerleft h6 {
+.containerleft h1 {
     margin-top: 2rem;
     font-size: 4rem;
-    font-weight: 400;
-
+    font-weight: 450;
 }
 
-.containerleft h6 span {
+.containerleft h1 span {
     color: var(--secondary-color);
 }
 
 .containerleft .design {
     width: 20rem;
-    margin-left: 9rem;
+    margin-left: 10rem;
 }
 
 .containerleft p {
@@ -258,7 +290,6 @@ nav ul li a:hover {
     border-radius: 1rem;
     position: relative;
     overflow: hidden;
-
 }
 
 .btn1 {
@@ -288,12 +319,10 @@ nav ul li a:hover {
     border-radius: 50%;
     transition: all 0.5s;
     z-index: -1;
-
 }
 
 .btn1:hover::before {
     transform: translate(-50%, -50%) scale(1);
-
 }
 
 .containerleft .btn::before {
@@ -314,6 +343,12 @@ nav ul li a:hover {
     border-radius: 1rem;
 }
 
+.containerleft .curve{
+    position: absolute;
+    bottom: 0;
+    left: -13rem;
+}
+
 .containerright {
     position: relative;
 }
@@ -321,7 +356,7 @@ nav ul li a:hover {
 .containerright img {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 9rem;
     width: auto;
     display: block;
 }
@@ -345,12 +380,10 @@ nav ul li a:hover {
 
 .containerright .courses i {
     font-size: 2.5rem;
-
 }
 
 .containerright .courses h2 {
     color: white;
-
     font-size: 3rem;
 }
 
@@ -365,9 +398,7 @@ nav ul li a:hover {
     top: 12rem;
     left: 28rem;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-
     animation: arrow11 infinite 3s;
-
 }
 
 @keyframes arrow11 {
@@ -389,7 +420,7 @@ nav ul li a:hover {
     width: 17rem;
     position: absolute;
     top: 27rem;
-    left: 16rem;
+    left: 11rem;
     color: var(--primary-color);
 }
 
