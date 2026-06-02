@@ -460,8 +460,16 @@ nav ul li a:hover {
 
 /**********************Courses*******************/
 
-
-
+.headingnm{
+    text-align: center;
+    margin: 3rem 0;
+    font-size: 5rem;
+    font-weight: 500;
+    color: rgb(61, 61, 61);
+}
+.headingnm:hover{
+    text-decoration: underline 5px solid rgb(61, 61, 61);
+}
 .discourse {
     margin: 0 1rem;
     border-radius: 1.5rem;
