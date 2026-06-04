@@ -620,9 +620,10 @@ nav ul li a:hover {
 
 
 /********slide******/
-.studentthought{
+.studentthought {
     margin-top: 5rem;
 }
+
 .swiper {
     margin-top: 1rem;
     width: 100%;
@@ -637,7 +638,7 @@ nav ul li a:hover {
 
 .reviewdetail {
     box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
-    padding: 3rem ;
+    padding: 3rem;
     border-radius: 1rem;
 }
 
@@ -665,30 +666,102 @@ nav ul li a:hover {
     width: 6rem;
     height: 6rem;
 }
-.persondetail{
+
+.persondetail {
     margin-left: 1rem;
 }
-.persondetail h4{
+
+.persondetail h4 {
     font-size: 1.5rem;
-    
+
 }
-.persondetail p{
+
+.persondetail p {
     margin-top: 0.5 rem;
 }
-.swiper{
+
+.swiper {
     position: static !important;
 }
-.reviewSlider{
+
+.reviewSlider {
     position: relative !important;
 }
+
 .reviewSlider .swiper-button-prev,
-.reviewSlider .swiper-button-next{
-  
+.reviewSlider .swiper-button-next {
+
     top: 100%;
 }
 
-.reviewSlider .swiper-button-next{
+.reviewSlider .swiper-button-next {
     left: 17rem;
 }
 
 /***********************************************/
+
+
+/**********************Placement Section****************/
+.placementSwiper{
+ padding: 2rem;
+}
+
+.placementSwiper .swiper-slide{
+   padding: 2rem;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.2);
+    border-radius: 1rem;
+} 
+.placementSwiper .swiper-slide .studentdata {
+    display: flex;
+    
+}
+
+.swiper-slide .studentdata .studentimage {
+    border: 10px solid var(--primary-color);
+    border-radius: 5rem 0 0 0;
+    width: 40%;
+    position: relative;
+}
+.swiper-slide .studentdata .studentimage::after{
+    content: '';
+    width: 115%;
+    height: 120%;
+    position: absolute;
+    background-color: var(--secondary-color);
+    top: -1.2rem;
+    left: -0.7rem;
+    z-index: -1;
+    transform: rotate(-10deg);
+     border-radius: 0 5rem  0 0;
+
+}
+.studentdata .studentimage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem 0 0 0;
+    object-fit: center center;
+
+}
+.studentdata .studentposition {
+    color: var(--primary-color);
+    margin-left: 3rem;
+    text-align: center;
+    font-family: serif;
+}
+.studentdata .studentposition .name{
+    font-size: 2rem;
+}
+
+.studentdata .studentposition .position{
+    font-size:2.2rem ;
+}
+.studentdata .studentposition .at{
+    font-size: 2rem;
+    text-align: center;
+}
+.studentdata .studentposition .logo{
+    width: 10rem;
+}
+
+
+/******************************************/
