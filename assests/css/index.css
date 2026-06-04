@@ -117,7 +117,7 @@ section {
 .headingnm {
     text-align: center;
     margin: 3rem 0;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 500;
     color: rgb(61, 61, 61);
 }
@@ -620,9 +620,20 @@ nav ul li a:hover {
 
 
 /********slide******/
-.studentthought{
-    margin-top: 5rem;
+.studentthought {
+    margin-top: 2rem;
+    text-align: left;
 }
+
+.studentthought h2 {
+    text-align: left;
+}
+
+.studentthought .quote {
+    font-size: 6rem;
+    color: #A9A9A9;
+}
+
 .swiper {
     margin-top: 1rem;
     width: 100%;
@@ -637,7 +648,7 @@ nav ul li a:hover {
 
 .reviewdetail {
     box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
-    padding: 3rem ;
+    padding: 3rem;
     border-radius: 1rem;
 }
 
@@ -665,30 +676,124 @@ nav ul li a:hover {
     width: 6rem;
     height: 6rem;
 }
-.persondetail{
+
+.persondetail {
     margin-left: 1rem;
 }
-.persondetail h4{
+
+.persondetail h4 {
     font-size: 1.5rem;
-    
-}
-.persondetail p{
-    margin-top: 0.5 rem;
-}
-.swiper{
-    position: static !important;
-}
-.reviewSlider{
-    position: relative !important;
-}
-.reviewSlider .swiper-button-prev,
-.reviewSlider .swiper-button-next{
-  
-    top: 100%;
+
 }
 
-.reviewSlider .swiper-button-next{
+.persondetail p {
+    margin-top: 0.5 rem;
+}
+
+.reviewSlider .swiper {
+    position: static !important;
+}
+
+.reviewSlider {
+    position: relative !important;
+}
+
+.reviewSlider .swiper-button-prev,
+.reviewSlider .swiper-button-next {
+
+    top: 90%;
+}
+
+.reviewSlider .swiper-button-next {
     left: 17rem;
 }
 
+.reviewSlider .swiper-button-prev svg,
+.reviewSlider .swiper-button-next svg {
+    height: 50%;
+    fill: black;
+}
+
+.reviewSlider .swiper-wrapper {
+    padding: 1rem;
+}
+
 /***********************************************/
+
+
+/*************Placement section*************/
+.swiper-slide .studentdata {
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    column-gap: 5rem;
+}
+
+.swiper-slide .studentdata .studentimage {
+    width: 30%;
+    border: 7px solid var(--primary-color);
+    border-radius: 6rem 0 0 0;
+    position: relative;
+}
+
+.studentdata .studentimage::after {
+    content: '';
+    width: 22rem;
+    height: 15rem;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: -.5rem;
+    left: -1rem;
+    transform: rotate(-10deg);
+    border-radius: 0 4rem 0 0;
+    z-index: -1;
+}
+
+.swiper-slide .studentimage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem 0 0 0;
+    object-position: center center;
+    object-fit: cover;
+}
+
+.swiper-slide .studentdata {
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.studentdata .studentposition .name {
+    font-size: 2rem;
+}
+
+.studentdata .studentposition .position {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.studentdata .studentposition .logo {
+    width: 15rem;
+}
+
+
+.placementSwiper .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.placementSwiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.placementSwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*************Placement section end*************/
