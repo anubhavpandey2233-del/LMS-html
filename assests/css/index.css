@@ -114,12 +114,28 @@ section {
     margin: 8rem 0;
 }
 
+.heading {
+    text-align: center;
+}
+
 .headingnm {
     text-align: center;
     margin: 3rem 0;
     font-size: 5rem;
     font-weight: 500;
-    color: rgb(61, 61, 61);
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+}
+
+.headingnm::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -1.3rem;
+    border: 3px solid var(--secondary-color);
+    width: 40%;
+    transform: translate(-50%, -50%);
 }
 
 /*****************Header*******************/
@@ -130,10 +146,9 @@ section {
     left: 2.5rem;
     width: 97%;
     margin: auto;
-    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2);
     border-radius: 5rem;
-    height: 10rem;
-    padding: 1.5rem 4rem;
+    padding: 0.5rem 2rem;
     display: flex;
     background-color: white;
     z-index: 999;
@@ -158,17 +173,22 @@ section {
 nav {
     display: flex;
     align-items: center;
+    order: -1;
+    padding-left: 2rem;
 }
 
 .icons a {
     display: inline-block;
-    width: 4rem;
-    height: 4rem;
     border-radius: 50px;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
     font-size: 1.7rem;
     margin-left: 1.2rem;
-    color: var(--primary-color)
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+.icons a:hover {
+    background-color: var(--secondary-color);
 }
 
 .icons .moon {
@@ -189,7 +209,7 @@ nav ul {
 nav ul li a {
     font-weight: 550;
     color: var(--primary-color);
-    transition: 1s;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
@@ -198,6 +218,7 @@ nav ul li a:hover {
 }
 
 .inquiry {
+    display: inline-block;
     color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
     font-size: 1.7rem;
@@ -205,6 +226,7 @@ nav ul li a:hover {
     margin-left: 3rem;
     padding: .8rem 3rem;
     text-transform: uppercase;
+    transition: all 0.5s;
 }
 
 .inquiry:hover {
@@ -221,6 +243,7 @@ nav ul li a:hover {
 #hero {
     height: 100vh;
     background-color: #faefee;
+    margin: 0 !important;
 }
 
 .herodata {
@@ -234,16 +257,17 @@ nav ul li a:hover {
     margin-top: 5rem;
     font-size: 2.2rem;
     color: var(--primary-color);
+    font-weight: 500;
 }
 
-.containerleft h6 {
+.containerleft h1 {
     margin-top: 2rem;
-    font-size: 4rem;
-    font-weight: 400;
+    font-size: 6rem;
+    font-weight: 500;
 
 }
 
-.containerleft h6 span {
+.containerleft h1 span {
     color: var(--secondary-color);
 }
 
@@ -320,12 +344,13 @@ nav ul li a:hover {
     transition: all 0.2s;
 }
 
-/* .containerleft .curve{
+.containerleft .curve {
     position: absolute;
-    bottom: 0;
-    left: -13rem;
-    width: 40rem;
-} */
+    bottom: 0rem;
+    left: -1rem;
+    width: 45rem;
+
+}
 
 .containerleft .btn:hover::before {
     width: 100%;
@@ -348,7 +373,7 @@ nav ul li a:hover {
 .containerright .courses {
     position: absolute;
     top: 16rem;
-    left: 12rem;
+    left: 20rem;
     background-color: var(--primary-color);
     color: white;
     width: 12rem;
@@ -480,16 +505,19 @@ nav ul li a:hover {
     border-radius: 1.5rem;
     padding: 1.5rem;
     position: relative;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2);
 }
 
 .cou {
     width: 100%;
     height: 50%;
-
-    margin: auto;
     overflow: hidden;
 
+}
+
+.rating img {
+    width: 2rem;
+    height: 2rem;
 }
 
 .toppt {
@@ -520,15 +548,19 @@ nav ul li a:hover {
     transform: scale(1.2);
 }
 
+.bottompt {
+    padding-top: 1rem;
+}
+
 .bottompt h2 {
     position: relative;
-    color: black;
+    color: var(--primary-color);
     margin-top: 2.2rem;
     font-size: 2.3rem;
     line-height: 3rem;
     transition: all 2s;
     display: inline;
-    background-image: linear-gradient(#000000, #000000);
+    background-image: linear-gradient(var(--primary-color), var(--primary-color));
     background-position: left bottom;
     background-size: 0 2px;
     background-repeat: no-repeat;
@@ -545,7 +577,7 @@ nav ul li a:hover {
 }
 
 .bottompt p {
-    color: gray;
+    color: #575e84;
     font-size: 1.4rem;
     margin-top: 1rem;
     line-height: 2.2rem;
@@ -563,7 +595,7 @@ nav ul li a:hover {
 }
 
 
-.bottompt .couamt {
+/* .bottompt .couamt {
     width: 5rem;
     height: 5rem;
     position: absolute;
@@ -572,15 +604,15 @@ nav ul li a:hover {
     right: 2rem;
     font-size: 1.2rem;
     color: white;
-    background-color: #5057E6;
+    background-color: var(--secondary-color);
     padding: 1.8rem 1.1rem;
     border-radius: 50%;
     transition: all 1s;
-}
+} */
 
-.discourse:hover .bottompt .couamt {
+/* .discourse:hover .bottompt .couamt {
     transform: scale(1.2);
-}
+} */
 
 #courses .row {
     margin: 0 -1rem;
@@ -593,21 +625,28 @@ nav ul li a:hover {
 
 
 /*****************Reviews section***************/
-.reviewdata h2 {
+/* .reviewdata h2 {
     color: #030303;
     text-align: center;
     font-size: 3rem;
     font-weight: 500;
-}
+} */
 
 .reviewdata .studreview {
     font-weight: 700;
+    font-size: 4.5rem;
+    margin-top: -1rem;
+    text-align: center;
 }
 
 .reviewdata .rating {
     text-align: center;
     margin: 3rem 0;
     font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
 }
 
 .reviewdata .rating i {
@@ -621,13 +660,17 @@ nav ul li a:hover {
 
 /********slide******/
 
-.studentthought .quote{
+.studentthought .quote {
     font-size: 6rem;
     color: gray;
+    margin-left: -1rem;
 }
-.studentthought h2{
+
+.studentthought h3 {
     text-align: left;
+    font-size: 3.2rem;
 }
+
 .swiper {
     margin-top: 1rem;
     width: 100%;
@@ -644,6 +687,10 @@ nav ul li a:hover {
     box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
     padding: 3rem;
     border-radius: 1rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .reviewdetail p {
@@ -695,77 +742,164 @@ nav ul li a:hover {
 .reviewSlider .swiper-button-prev,
 .reviewSlider .swiper-button-next {
 
-    top: 100%;
+    top: 80%;
+}
+
+.reviewSlider .swiper-button-prev {
+    left: -1.2rem;
 }
 
 .reviewSlider .swiper-button-next {
-    left: 17rem;
+    left: 15rem;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--primary-color);
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+    width: 60%;
+}
+
+
 
 /***********************************************/
 
 
 /**********************Placement Section****************/
-.placementSwiper{
- padding: 2rem;
+.placementdata {
+    position: relative;
 }
 
-.placementSwiper .swiper-slide{
-   padding: 2rem;
-    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.2);
+.placementSwiper {
+    padding: 2rem;
+
+}
+
+.placementSwiper .swiper-slide {
+    padding: 2rem;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
-} 
+}
+
 .placementSwiper .swiper-slide .studentdata {
     display: flex;
-    
+    height: 13rem;
+    padding: 1rem 0;
 }
 
 .swiper-slide .studentdata .studentimage {
-    border: 10px solid var(--primary-color);
-    border-radius: 5rem 0 0 0;
+    border: 8px solid var(--primary-color);
+    border-radius: 3rem 0 0 0;
     width: 40%;
     position: relative;
 }
-.swiper-slide .studentdata .studentimage::after{
+
+.swiper-slide .studentdata .studentimage::after {
     content: '';
-    width: 115%;
+    width: 117%;
     height: 120%;
     position: absolute;
     background-color: var(--secondary-color);
     top: -1.2rem;
-    left: -0.7rem;
+    left: -0.9rem;
     z-index: -1;
-    transform: rotate(-10deg);
-     border-radius: 0 5rem  0 0;
+    transform: rotate(-9deg);
+    border-radius: 0 5rem 0 0;
 
 }
+
 .studentdata .studentimage img {
     width: 100%;
     height: 100%;
-    border-radius: 4rem 0 0 0;
+    border-radius: 2rem 0 0 0;
     object-fit: center center;
 
 }
+
 .studentdata .studentposition {
     color: var(--primary-color);
     margin-left: 3rem;
     text-align: center;
-    font-family: serif;
+
 }
-.studentdata .studentposition .name{
+
+.studentdata .studentposition .name {
     font-size: 2rem;
 }
 
-.studentdata .studentposition .position{
-    font-size:2.2rem ;
+.studentdata .studentposition .position {
+    font-size: 2rem;
 }
-.studentdata .studentposition .at{
+
+.studentdata .studentposition .at {
     font-size: 2rem;
     text-align: center;
 }
-.studentdata .studentposition .logo{
+
+.studentdata .studentposition .logo {
     width: 10rem;
 }
 
+.reviewSlider .swiper-wrapper {
+    padding: 1rem;
+}
+
+.placementSwiper .swiper-button-prev svg,
+.placementSwiper .swiper-button-next svg {
+    height: 3rem;
+    width: 3rem;
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    /* background-color: #cfcfd5; */
+
+}
+
+.placementSwiper .swiper-button-prev,
+.placementSwiper .swiper-button-next {
+    top: 107%;
+}
+
+.placementSwiper .swiper-button-prev {
+    left: 46.5%;
+}
+
+.placementSwiper .swiper-button-next {
+    right: 46.5%;
+}
 
 /******************************************/
+
+
+
+
+/***********************Collaboration Section***********************/
+
+.leftcolabslider{
+    margin-top: 2rem;
+}
+
+.leftslider .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.leftslider .swiper-slide img {
+    display: block;
+    width: 20rem; 
+    object-fit: cover;
+}
+.rightslider .swiper-slide img {
+    display: block;
+    width: 20rem; 
+    object-fit: cover;
+}
+
+/**************************************************************/
