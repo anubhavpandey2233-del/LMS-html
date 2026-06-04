@@ -620,10 +620,14 @@ nav ul li a:hover {
 
 
 /********slide******/
-.studentthought {
-    margin-top: 5rem;
-}
 
+.studentthought .quote{
+    font-size: 6rem;
+    color: gray;
+}
+.studentthought h2{
+    text-align: left;
+}
 .swiper {
     margin-top: 1rem;
     width: 100%;
