@@ -120,7 +120,7 @@ section {
 
 .headingnm {
     text-align: center;
-    margin: 3rem 0;
+    margin: 3rem 0 5rem 0;
     font-size: 5rem;
     font-weight: 500;
     color: var(--primary-color);
@@ -1136,8 +1136,12 @@ nav ul li a:hover {
 
 /*************************************
 Contact Data *****************************/
+.contactdata {
+    margin-top: 7rem;
+}
+
 .contactdata .map {
-    border: 2px solid black;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
     margin-right: 3rem;
 }
 
@@ -1206,59 +1210,221 @@ Contact Data *****************************/
     margin-top: 0.3rem;
 }
 
-.contactdata form {
+#contactform {
+    width: 100%;
+    height: 100%;
+    padding: 8rem 0;
+    position: relative;
+    margin-bottom: 0 !important;
+}
+
+#contactform::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/contact_bg.png);
+    background-size: cover;
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#contactform .form_data {
+    z-index: 9;
+}
+
+.form_data h3 {
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(43, 42, 42);
+
+}
+
+.form_data form {
     margin-top: 7rem;
 }
 
-.contactdata form h3 {
-    text-align: center;
-    font-size: 4rem;
-}
-
-.contactdata form input {
+.form_data form input {
     border: none;
     font-size: 2rem;
+    width: 80%;
+    margin-left: 1rem;
+    outline: none;
 }
 
-.contactdata form label {
+.form_data form label {
     font-size: 1.5rem;
     color: gray;
 }
-.contactdata form .fr {
+
+.form_data form .fr {
     display: flex;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: 2rem;
     margin-top: 4rem;
-  
-   justify-content: space-between;
+
+    justify-content: space-between;
 }
 
-.contactdata form .formdata {
-    box-shadow: 0 0  2rem 0 rgba(0, 0, 0, 0.2);
-    width: 48%;
+.form_data form .formdata {
+    box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
+    width: 49.2%;
     display: inline-block;
-    padding:1.5rem;
+    padding: 1.5rem;
     border-radius: 0.5rem;
+    background-color: white;
+}
+
+.form_data form .Message {
+    height: 15rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.form_data form .submit {
+    display: inline-block;
+    margin-top: 4rem;
+    padding: 1.2rem 3rem;
+    font-weight: 550;
+    background-color: var(--secondary-color);
+    color: white;
+    z-index: 9;
+    border: none;
+    position: relative;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.form_data form .submit::after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 0.5rem;
+    opacity: 0;
+}
+
+.form_data form .submit:hover::after {
+    background-color: var(--primary-color);
+    width: 100%;
+    opacity: 1;
+    z-index: -1;
+}
+
+.form_data form .submitbutton {
+    display: flex;
+    justify-content: center;
+
+}
+
+/****************************************************/
+
+
+/**********************************FooterSection ***************************/
+
+#footredata{
+    background-color: #E7E9F1;
    
 }
-.contactdata form .address {
-    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
-  height: 15rem;
-  margin-top: 4rem;
-    padding:1.5rem;
-    border-radius: 0.5rem;
+#footredata .footer{
+    padding: 6rem 0;
+    border-bottom: 1px solid black;
 }
-.contactdata form .submit{
+.footer .data{
+    display: flex;
+   
+}
+.footer .data .logo {
+    text-align: center;
+}
+.footer .data .logo .lg img{
+    width: 15rem;
+  
+}
+.footer .data .logo .location i{
+    color: var(--primary-color);
+    font-size: 3.5rem;
+    margin-top: 3rem;
+}
+.footer .data .logo .location p{
+    font-size: 1.7rem;
+    color: rgb(22, 22, 22);
+    
+}
+.footer .data .logo .location p:hover{
+    color: var(--secondary-color);
+}
+.footer .m_point .heading_nm{
+    display: flex;
+    align-items: center;
+}
+.footer .m_point .box {
+    background-color: var(--secondary-color);
+    width: 0.6rem;
+    height: 0.6rem;
     display: inline-block;
-   margin-top: 2rem;
-   padding: 1rem 3rem;
-   font-weight: 550;
-   background-color: var(--secondary-color);
-   color: white;
-   transition: 1s;
-   border: none;
+    margin-right: 1rem;
 }
-.contactdata form .submit:hover{
-    background-color: var(--primary-color);
+.footer .m_point h3{
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    font-weight: 650;
 }
-/****************************************************/
+.footer .m_point ul{
+    margin-left: 2rem;
+}
+.footer .m_point ul li a{
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: rgb(22, 22, 22);
+}
+.footer .m_point ul li a:hover{
+    color: var(--secondary-color);
+}
+.footer .m_point ul .cou_nm a{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    transition: 0.5s;
+}
+.footer .m_point ul .cou_nm a:hover{
+    color: var(--primary-color);
+}
+.footer .contact_us ul li a span{
+    margin-left: 0.7rem;
+}
+.footer .follow_us{
+    margin-top: 3rem;
+}
+.footer .follow_us .follow{
+    display: inline-block;
+    font-size: 1.7rem;
+    margin-top: 1rem;
+     
+}
+
+.footer .follow_us .follow i{
+    color: rgb(22, 22, 22);
+     transition: 0.5s;
+    margin-left: 2rem;
+}
+.footer .follow_us .follow i:hover{
+    color: var(--secondary-color);
+}
+#footredata  p{
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+     color: rgb(22, 22, 22);
+    
+}
+/*********************************************************************** /
