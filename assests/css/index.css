@@ -977,12 +977,13 @@ nav ul li a:hover {
 /************************About Data*****************/
 
 .aboutdata .about {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .topaboutdata {
     display: flex;
     margin: 1rem;
+    height: 100%;
 
 }
 
@@ -1042,6 +1043,7 @@ nav ul li a:hover {
 .topaboutdata .img img {
     border-radius: 2rem 4rem 4rem 2rem;
     height: 100%;
+    object-fit: cover;
 }
 
 
@@ -1130,3 +1132,133 @@ nav ul li a:hover {
 }
 
 /******************************8*****************/
+
+
+/*************************************
+Contact Data *****************************/
+.contactdata .map {
+    border: 2px solid black;
+    margin-right: 3rem;
+}
+
+.contactdata .location h4 {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: 650;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    position: relative;
+}
+
+.contactdata .location .main-name h4::after {
+    content: '';
+    border: 1px solid var(--secondary-color);
+    position: absolute;
+    width: 10%;
+    top: 0.9rem;
+    left: 17rem;
+}
+
+.contactdata .location .main-name h3 {
+    font-size: 3.8rem;
+    letter-spacing: 0.2rem;
+    margin: 2rem 0;
+    line-height: 5rem;
+}
+
+.contactdata .location .data {
+    display: flex;
+    margin-top: 4rem;
+
+}
+
+.contactdata .location .data .icon i {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--primary-color);
+    font-size: 3.5rem;
+    color: var(--secondary-color);
+    padding: 1.5rem;
+
+}
+
+.contactdata .location .l_data {
+    align-items: center;
+    margin-left: 2rem;
+
+}
+
+.contactdata .location .data h3 {
+    font-size: 2.3rem;
+    display: inline-block;
+}
+
+.contactdata .location .data span {
+    font-size: 2.5rem;
+    font-weight: 650;
+    color: var(--secondary-color);
+    margin-left: 1rem;
+}
+
+.contactdata .location .data p {
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+}
+
+.contactdata form {
+    margin-top: 7rem;
+}
+
+.contactdata form h3 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.contactdata form input {
+    border: none;
+    font-size: 2rem;
+}
+
+.contactdata form label {
+    font-size: 1.5rem;
+    color: gray;
+}
+.contactdata form .fr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 4rem;
+  
+   justify-content: space-between;
+}
+
+.contactdata form .formdata {
+    box-shadow: 0 0  2rem 0 rgba(0, 0, 0, 0.2);
+    width: 48%;
+    display: inline-block;
+    padding:1.5rem;
+    border-radius: 0.5rem;
+   
+}
+.contactdata form .address {
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
+  height: 15rem;
+  margin-top: 4rem;
+    padding:1.5rem;
+    border-radius: 0.5rem;
+}
+.contactdata form .submit{
+    display: inline-block;
+   margin-top: 2rem;
+   padding: 1rem 3rem;
+   font-weight: 550;
+   background-color: var(--secondary-color);
+   color: white;
+   transition: 1s;
+   border: none;
+}
+.contactdata form .submit:hover{
+    background-color: var(--primary-color);
+}
+/****************************************************/
