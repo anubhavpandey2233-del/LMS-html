@@ -1415,7 +1415,7 @@ Contact Data *****************************/
 .footer .follow_us .follow i{
     color: rgb(22, 22, 22);
      transition: 0.5s;
-    margin-left: 2rem;
+    margin-left: 1.3rem;
 }
 .footer .follow_us .follow i:hover{
     color: var(--secondary-color);
