@@ -1143,6 +1143,7 @@ Contact Data *****************************/
 .contactdata .map {
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
     margin-right: 3rem;
+   
 }
 
 .contactdata .location h4 {
@@ -1330,42 +1331,51 @@ Contact Data *****************************/
 
 /**********************************FooterSection ***************************/
 
-#footredata{
+#footredata {
     background-color: #E7E9F1;
-   
+
 }
-#footredata .footer{
+
+#footredata .footer {
     padding: 6rem 0;
     border-bottom: 1px solid black;
 }
-.footer .data{
+
+.footer .data {
     display: flex;
-   
+
 }
+
 .footer .data .logo {
     text-align: center;
 }
-.footer .data .logo .lg img{
+
+.footer .data .logo .lg img {
     width: 15rem;
-  
+
 }
-.footer .data .logo .location i{
+
+.footer .data .logo .location i {
     color: var(--primary-color);
     font-size: 3.5rem;
     margin-top: 3rem;
 }
-.footer .data .logo .location p{
+
+.footer .data .logo .location p {
     font-size: 1.7rem;
     color: rgb(22, 22, 22);
-    
+
 }
-.footer .data .logo .location p:hover{
+
+.footer .data .logo .location p:hover {
     color: var(--secondary-color);
 }
-.footer .m_point .heading_nm{
+
+.footer .m_point .heading_nm {
     display: flex;
     align-items: center;
 }
+
 .footer .m_point .box {
     background-color: var(--secondary-color);
     width: 0.6rem;
@@ -1373,58 +1383,70 @@ Contact Data *****************************/
     display: inline-block;
     margin-right: 1rem;
 }
-.footer .m_point h3{
+
+.footer .m_point h3 {
     color: var(--primary-color);
     font-size: 2.2rem;
     font-weight: 650;
 }
-.footer .m_point ul{
+
+.footer .m_point ul {
     margin-left: 2rem;
 }
-.footer .m_point ul li a{
+
+.footer .m_point ul li a {
     display: inline-block;
     margin-top: 1rem;
     font-size: 1.5rem;
     color: rgb(22, 22, 22);
 }
-.footer .m_point ul li a:hover{
+
+.footer .m_point ul li a:hover {
     color: var(--secondary-color);
 }
-.footer .m_point ul .cou_nm a{
+
+.footer .m_point ul .cou_nm a {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--secondary-color);
     transition: 0.5s;
 }
-.footer .m_point ul .cou_nm a:hover{
+
+.footer .m_point ul .cou_nm a:hover {
     color: var(--primary-color);
 }
-.footer .contact_us ul li a span{
+
+.footer .contact_us ul li a span {
     margin-left: 0.7rem;
 }
-.footer .follow_us{
+
+.footer .follow_us {
     margin-top: 3rem;
 }
-.footer .follow_us .follow{
+
+.footer .follow_us .follow {
     display: inline-block;
     font-size: 1.7rem;
     margin-top: 1rem;
-     
+
 }
 
-.footer .follow_us .follow i{
+.footer .follow_us .follow i {
     color: rgb(22, 22, 22);
-     transition: 0.5s;
+    transition: 0.5s;
     margin-left: 1.3rem;
 }
-.footer .follow_us .follow i:hover{
+
+.footer .follow_us .follow i:hover {
     color: var(--secondary-color);
 }
-#footredata  p{
+
+#footredata p {
     padding: 2rem 0;
     text-align: center;
     font-size: 1.5rem;
-     color: rgb(22, 22, 22);
-    
+    color: rgb(22, 22, 22);
+
 }
+
 /*********************************************************************** /
