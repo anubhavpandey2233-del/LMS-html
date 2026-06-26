@@ -687,7 +687,7 @@ nav ul li a:hover {
     box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
     padding: 3rem;
     border-radius: 1rem;
-    height: 16rem;
+    /* height: 16rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -786,7 +786,7 @@ nav ul li a:hover {
 
 .placementSwiper .swiper-slide .studentdata {
     display: flex;
-    height: 13rem;
+    /* height: 13rem; */
     padding: 1rem 0;
 }
 
@@ -978,6 +978,7 @@ nav ul li a:hover {
 
 .aboutdata .about {
     margin-bottom: 2rem;
+    row-gap: 2rem;
 }
 
 .topaboutdata {
@@ -1008,6 +1009,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
 
+
 }
 
 .topaboutdata .data .logo h3 {
@@ -1016,6 +1018,7 @@ nav ul li a:hover {
     text-transform: uppercase;
     color: var(--primary-color);
     position: relative;
+    text-align: left;
 }
 
 .topaboutdata .data .logo h3::after {
@@ -1025,6 +1028,7 @@ nav ul li a:hover {
     bottom: -1.3rem;
     border: 3px solid var(--secondary-color);
     width: 18%;
+    text-align: left;
 
 }
 
@@ -1082,7 +1086,10 @@ nav ul li a:hover {
     box-shadow: 0 0 2rem 0 rgba(0, 0, 0, .2);
     padding: 2.8rem;
     border-radius: 2rem;
-    height: 20rem;
+   
+}
+.aboutdata .bottomaboutdata .msn{
+    padding-bottom: 4.7rem;
 }
 
 .bottomaboutdata .mission .logo {
@@ -1143,9 +1150,11 @@ Contact Data *****************************/
 .contactdata .map {
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
     margin-right: 3rem;
-   
+    height: 100%;
 }
-
+.contactdata .map iframe{
+    height: 100%;
+}
 .contactdata .location h4 {
     color: var(--secondary-color);
     font-size: 1.5rem;
@@ -1247,10 +1256,10 @@ Contact Data *****************************/
     margin-top: 7rem;
 }
 
-.form_data form input {
+.form_data form input,textarea{
     border: none;
-    font-size: 2rem;
-    width: 80%;
+    font-size: 1.5rem;
+    /* width: 80%; */
     margin-left: 1rem;
     outline: none;
 }
@@ -1260,28 +1269,26 @@ Contact Data *****************************/
     color: gray;
 }
 
-.form_data form .fr {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 4rem;
-
-    justify-content: space-between;
+.form_data form .fr{
+   row-gap: 1rem;
+   
+   
 }
 
 .form_data form .formdata {
     box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
-    width: 49.2%;
-    display: inline-block;
-    padding: 1.5rem;
+   /* margin-left: 1rem; */
+    /* display: inline-block; */
+    padding: 1rem;
     border-radius: 0.5rem;
     background-color: white;
+    
 }
 
 .form_data form .Message {
     height: 15rem;
-    margin-top: 2rem;
-    width: 100%;
+    margin-top: 1rem;
+    /* width: 100%; */
 }
 
 .form_data form .submit {
@@ -1390,9 +1397,9 @@ Contact Data *****************************/
     font-weight: 650;
 }
 
-.footer .m_point ul {
+/* .footer .m_point ul {
     margin-left: 2rem;
-}
+} */
 
 .footer .m_point ul li a {
     display: inline-block;

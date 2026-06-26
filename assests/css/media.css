@@ -1,0 +1,168 @@
+/* About-Page Media Query */
+
+/* Extra small:-0> and <=576 */
+@media screen and (max-width:576px) {
+
+    .topaboutdata .logo .h3 {
+        font-size: 1.5rem;
+    }
+
+    .aboutdata .bottomaboutdata .mission {
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    .why_wedata .midsec {
+        display: none;
+    }
+
+    .contactdata .contact {
+        row-gap: 2rem;
+    }
+
+    .contactdata .location .data h3 {
+        font-size: 1.8rem;
+
+    }
+    
+    .reviewSlider .swiper-button-prev,
+    .reviewSlider .swiper-button-next {
+
+        top: 100%;
+    }
+
+    .reviewSlider .swiper-button-prev {
+        left: 15rem;
+    }
+
+    .reviewSlider .swiper-button-next {
+        left: 20rem;
+    }
+
+
+}
+
+
+
+/* small:->=576 and <768 */
+@media screen and (min-width:576px) {
+
+    .topaboutdata .logo .h3 {
+        font-size: 1.5rem;
+    }
+
+
+    .why_wedata .midsec {
+        display: none;
+    }
+
+    .contactdata .contact {
+        row-gap: 2rem;
+    }
+
+    .contactdata .location .data h3 {
+        font-size: 2rem;
+
+    }
+    
+   .reviewSlider .swiper-button-prev,
+    .reviewSlider .swiper-button-next {
+
+        top: 100%;
+    }
+
+    .reviewSlider .swiper-button-prev {
+        left: 35rem;
+    }
+
+    .reviewSlider .swiper-button-next {
+        left: 40rem;
+    }
+
+
+
+
+}
+
+
+
+/* Medium:->=768 and <992 */
+@media screen and (min-width:768px) {
+
+    .topaboutdata .logo .h3 {
+        font-size: 1.8rem;
+    }
+
+    .aboutdata .bottomaboutdata .mission {
+        flex-direction: row;
+    }
+
+    .contactdata .location .data h3 {
+        font-size: 2.3rem;
+
+    }
+
+    .reviewSlider .swiper-button-prev,
+    .reviewSlider .swiper-button-next {
+
+        top: 100%;
+    }
+
+    .reviewSlider .swiper-button-prev {
+        left: 35rem;
+    }
+
+    .reviewSlider .swiper-button-next {
+        left: 40rem;
+    }
+
+
+
+}
+
+
+
+
+/* Large :->=992 and <1200 */
+@media screen and (min-width:992px) {
+
+    .reviewSlider .swiper-button-prev,
+    .reviewSlider .swiper-button-next {
+
+        top: 80%;
+    }
+
+    .reviewSlider .swiper-button-prev {
+        left: -1.2rem;
+    }
+
+    .reviewSlider .swiper-button-next {
+        left: 15rem;
+    }
+
+}
+
+
+
+/* Extra large:->=1200 and <1400 */
+@media screen and (min-width:1200px) {
+
+    .topaboutdata .logo .h3 {
+        font-size: 2.3rem;
+    }
+
+    .aboutdata .bottomaboutdata .mission {
+        flex-direction: row;
+    }
+
+    .why_wedata .midsec {
+        display: block;
+    }
+
+}
+
+
+
+
+/* Extra extra large:->=1400 */
+@media screen and (min-width:1400px) {}
