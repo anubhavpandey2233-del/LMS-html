@@ -24,7 +24,7 @@
         font-size: 1.8rem;
 
     }
-    
+
     .reviewSlider .swiper-button-prev,
     .reviewSlider .swiper-button-next {
 
@@ -37,6 +37,13 @@
 
     .reviewSlider .swiper-button-next {
         left: 20rem;
+    }
+    .placementSwiper .swiper-slide .studentdata {
+        display: flex;
+        /* height: 13rem; */
+        padding: 1rem 0;
+        flex-direction: column;
+        align-items: center;
     }
 
 
@@ -64,8 +71,8 @@
         font-size: 2rem;
 
     }
-    
-   .reviewSlider .swiper-button-prev,
+
+    .reviewSlider .swiper-button-prev,
     .reviewSlider .swiper-button-next {
 
         top: 100%;
@@ -78,7 +85,11 @@
     .reviewSlider .swiper-button-next {
         left: 40rem;
     }
-
+    .placementSwiper .swiper-slide .studentdata {
+        
+        flex-direction: column;
+        align-items: center;
+    }
 
 
 
@@ -116,6 +127,8 @@
         left: 40rem;
     }
 
+    
+
 
 
 }
@@ -139,8 +152,13 @@
     .reviewSlider .swiper-button-next {
         left: 15rem;
     }
+    .placementSwiper .swiper-slide .studentdata {
+        flex-direction: row;
+        
+    }
 
 }
+
 
 
 
@@ -158,6 +176,9 @@
     .why_wedata .midsec {
         display: block;
     }
+    
+
+
 
 }
 
