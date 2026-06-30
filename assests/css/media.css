@@ -36,8 +36,9 @@
     }
 
     .reviewSlider .swiper-button-next {
-        left: 20rem;
+        left: 19rem;
     }
+
     .placementSwiper .swiper-slide .studentdata {
         display: flex;
         /* height: 13rem; */
@@ -46,6 +47,24 @@
         align-items: center;
     }
 
+    .headingnm {
+        font-size: 3rem;
+    }
+
+    .placementSwiper .swiper-button-prev {
+        left: 38%;
+
+    }
+
+    .placementSwiper .swiper-button-next {
+        right: 38%;
+
+    }
+    .contactdata .location .main-name h3 {
+        font-size: 2.7rem;
+    }
+
+    
 
 }
 
@@ -79,16 +98,35 @@
     }
 
     .reviewSlider .swiper-button-prev {
-        left: 35rem;
+        left: 22rem;
     }
 
     .reviewSlider .swiper-button-next {
-        left: 40rem;
+        left: 28rem;
     }
+
     .placementSwiper .swiper-slide .studentdata {
-        
+
         flex-direction: column;
         align-items: center;
+    }
+
+    .headingnm {
+        font-size: 4rem;
+    }
+
+    .placementSwiper .swiper-button-prev {
+        left: 42.5%;
+
+    }
+
+    .placementSwiper .swiper-button-next {
+        right: 42.5%;
+
+    }
+
+     .contactdata .location .main-name h3 {
+        font-size: 3rem;
     }
 
 
@@ -120,14 +158,26 @@
     }
 
     .reviewSlider .swiper-button-prev {
-        left: 35rem;
+        left: 31rem;
     }
 
     .reviewSlider .swiper-button-next {
-        left: 40rem;
+        left: 39rem;
     }
 
-    
+    .placementSwiper .swiper-button-prev {
+        left: 42.5%;
+
+    }
+
+    .placementSwiper .swiper-button-next {
+        right: 42.5%;
+
+    }
+
+    .contactdata .location .main-name h3 {
+        font-size: 3.8rem;
+    }
 
 
 
@@ -150,12 +200,31 @@
     }
 
     .reviewSlider .swiper-button-next {
-        left: 15rem;
+        left: 13rem;
     }
+
     .placementSwiper .swiper-slide .studentdata {
         flex-direction: row;
-        
+
     }
+
+    .headingnm {
+        font-size: 5rem;
+    }
+
+    .placementSwiper .swiper-button-prev {
+        left: 44.5%;
+
+    }
+
+    .placementSwiper .swiper-button-next {
+        right: 44.5%;
+
+    }
+
+    .aboutdata .bottomaboutdata .msn {
+    padding-bottom: 6.7rem;
+}
 
 }
 
@@ -176,8 +245,20 @@
     .why_wedata .midsec {
         display: block;
     }
-    
 
+    .placementSwiper .swiper-button-prev {
+        left: 45.5%;
+
+    }
+
+    .placementSwiper .swiper-button-next {
+        right: 45.5%;
+
+    }
+
+    .aboutdata .bottomaboutdata .msn {
+    padding-bottom: 4.7rem;
+}
 
 
 }

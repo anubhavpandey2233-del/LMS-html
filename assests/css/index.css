@@ -247,8 +247,6 @@ nav ul li a:hover {
     height: 100vh;
 }
 
-
-
 .containerleft .favcou {
     margin-top: 5rem;
     font-size: 2.2rem;
@@ -823,20 +821,26 @@ nav ul li a:hover {
 }
 
 .studentdata .studentposition .name {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .studentdata .studentposition .position {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .studentdata .studentposition .at {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
 }
 
 .studentdata .studentposition .logo {
-    width: 10rem;
+    width: 9rem;
+    height: 1rem;
+    object-fit: cover;
+}
+
+.reviewbox {
+    margin: 2rem;
 }
 
 .reviewSlider .swiper-wrapper {
@@ -862,10 +866,12 @@ nav ul li a:hover {
 
 .placementSwiper .swiper-button-prev {
     left: 46.5%;
+    /* transform: translate(0,0); */
 }
 
 .placementSwiper .swiper-button-next {
     right: 46.5%;
+    /* transform: translate(0,0); */
 }
 
 /******************************************/
@@ -1082,9 +1088,10 @@ nav ul li a:hover {
     box-shadow: 0 0 2rem 0 rgba(0, 0, 0, .2);
     padding: 2.8rem;
     border-radius: 2rem;
-   
+    align-items: center;
 }
-.aboutdata .bottomaboutdata .msn{
+
+.aboutdata .bottomaboutdata .msn {
     padding-bottom: 4.7rem;
 }
 
@@ -1095,7 +1102,7 @@ nav ul li a:hover {
     width: 9rem;
     height: 9rem;
     flex-shrink: 0;
-    margin-top: 3rem;
+
 }
 
 .bottomaboutdata .mission .logo i {
@@ -1148,9 +1155,11 @@ Contact Data *****************************/
     margin-right: 3rem;
     height: 100%;
 }
-.contactdata .map iframe{
+
+.contactdata .map iframe {
     height: 100%;
 }
+
 .contactdata .location h4 {
     color: var(--secondary-color);
     font-size: 1.5rem;
@@ -1252,7 +1261,8 @@ Contact Data *****************************/
     margin-top: 7rem;
 }
 
-.form_data form input,textarea{
+.form_data form input,
+textarea {
     border: none;
     font-size: 1.5rem;
     /* width: 80%; */
@@ -1265,20 +1275,20 @@ Contact Data *****************************/
     color: gray;
 }
 
-.form_data form .fr{
-   row-gap: 1rem;
-   
-   
+.form_data form .fr {
+    row-gap: 1rem;
+
+
 }
 
 .form_data form .formdata {
     box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
-   /* margin-left: 1rem; */
+    /* margin-left: 1rem; */
     /* display: inline-block; */
     padding: 1rem;
     border-radius: 0.5rem;
     background-color: white;
-    
+
 }
 
 .form_data form .Message {
