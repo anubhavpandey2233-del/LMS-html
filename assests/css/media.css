@@ -84,7 +84,7 @@
 
     .aboutdata .bottomaboutdata .mission {
         padding: 1.7rem;
-       
+
     }
 
     .aboutdata .bottomaboutdata .mission .logo {
@@ -103,50 +103,63 @@
     .leftslider .swiper-slide img {
         width: 14rem;
     }
-    .rightslider .swiper-slide img{
-         width: 14rem;
+
+    .rightslider .swiper-slide img {
+        width: 14rem;
     }
-     section{
-        margin:4rem 0;
+
+    section {
+        margin: 4rem 0;
     }
-    .whywedata .data h3{
+
+    .whywedata .data h3 {
         font-size: 2.2rem;
     }
+
     .whywedata .data p {
         font-size: 1.6rem;
     }
-    .why_wedata .whywedata{
-        margin:2rem 0 0 0;
+
+    .why_wedata .whywedata {
+        margin: 2rem 0 0 0;
     }
+
     .whywedata .data p {
         margin-top: 0;
     }
+
     .whywedata .icon {
         width: 5rem;
         height: 5rem;
     }
-    .whywedata .icon img{
-        width:3.1rem  
-     }
-     .whywedata .icon {
-        padding:.9rem;
-     }
-     .whywedata .communication img{
-            width: 4.1rem;
+
+    .whywedata .icon img {
+        width: 3.1rem
+    }
+
+    .whywedata .icon {
+        padding: .9rem;
+    }
+
+    .whywedata .communication img {
+        width: 4.1rem;
         margin: -.7rem;
-     }
-     .whywedata .suggestion img{
-        width:7rem;
-        margin:-2rem
-     }
-     .reviewdata .rating{
-        display:block;
-        flex-direction:row;
     }
-    .contactdata .map{
-        margin-right:0;
+
+    .whywedata .suggestion img {
+        width: 7rem;
+        margin: -2rem
     }
-    
+
+    .reviewdata .rating {
+        display: block;
+        flex-direction: row;
+    }
+
+    .contactdata .map {
+        margin-right: 0;
+    }
+
 }
 
 
@@ -218,22 +231,27 @@
     .bottomaboutdata .mission .bottomdata h3 {
         font-size: 2rem;
     }
+
     .leftslider .swiper-slide img {
-        width:18rem;
+        width: 18rem;
     }
-    .rightslider .swiper-slide img{
-         width:18rem;
+
+    .rightslider .swiper-slide img {
+        width: 18rem;
     }
-     section{
-        margin:6rem 0;
+
+    section {
+        margin: 6rem 0;
     }
-    .why_wedata .whywedata{
-        margin:2rem 0 0 0;
+
+    .why_wedata .whywedata {
+        margin: 2rem 0 0 0;
     }
-    .whywedata .data p{
-        margin-top:0;
+
+    .whywedata .data p {
+        margin-top: 0;
     }
-    
+
 }
 
 
@@ -281,8 +299,9 @@
     .contactdata .location .main-name h3 {
         font-size: 3.8rem;
     }
-    .whywedata .data p{
-    margin-top: 1rem;
+
+    .whywedata .data p {
+        margin-top: 1rem;
     }
 
 
@@ -339,14 +358,17 @@
     .bottomaboutdata .mission .bottomdata h3 {
         font-size: 2.3rem;
     }
-     .leftslider .swiper-slide img {
-        width:20rem;
+
+    .leftslider .swiper-slide img {
+        width: 20rem;
     }
-    .rightslider .swiper-slide img{
-         width:20rem;
+
+    .rightslider .swiper-slide img {
+        width: 20rem;
     }
-    section{
-        margin:8rem 0;
+
+    section {
+        margin: 8rem 0;
     }
 
 }

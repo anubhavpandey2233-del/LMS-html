@@ -29,6 +29,7 @@ body {
     --primary-color: #273376;
     --secondary-color: #F1604C;
 }
+
 /* 
 .row {
     display: flex;
@@ -91,7 +92,7 @@ body {
 } */
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 ul {
@@ -682,12 +683,14 @@ nav ul li a:hover {
     height: 100%;
     column-gap: 2rem;
 }
-
+.reviewbox{
+    margin: 2rem;
+}
 .reviewdetail {
     box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
     padding: 3rem;
     border-radius: 1rem;
-    height: 16rem;
+    /* height: 16rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -978,7 +981,7 @@ nav ul li a:hover {
 
 .aboutdata .about {
     margin-bottom: 2rem;
-     row-gap: 2rem;
+    row-gap: 2rem;
 }
 
 .topaboutdata {
@@ -1144,7 +1147,7 @@ Contact Data *****************************/
 .contactdata .map {
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
     margin-right: 3rem;
-   
+
 }
 
 .contactdata .location h4 {
@@ -1264,7 +1267,7 @@ Contact Data *****************************/
 .form_data form .fr {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    row-gap: 2rem;
     margin-top: 4rem;
 
     justify-content: space-between;
@@ -1272,9 +1275,9 @@ Contact Data *****************************/
 
 .form_data form .formdata {
     box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
-    width: 49.2%;
+    width: 100%;
     display: inline-block;
-    padding: 1.5rem;
+    padding: 0.8rem 1.2rem;
     border-radius: 0.5rem;
     background-color: white;
 }
