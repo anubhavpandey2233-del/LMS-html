@@ -154,12 +154,15 @@ section {
     background-color: white;
     z-index: 999;
 }
+.navbar-collapse{
+    align-items: flex-start;
+}
 
 .navigation {
     width: 100%;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .headercontainer .logo {
@@ -683,9 +686,11 @@ nav ul li a:hover {
     height: 100%;
     column-gap: 2rem;
 }
-.reviewbox{
+
+.reviewbox {
     margin: 2rem;
 }
+
 .reviewdetail {
     box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
     padding: 3rem;

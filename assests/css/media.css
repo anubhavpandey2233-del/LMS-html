@@ -110,6 +110,7 @@
 
     section {
         margin: 4rem 0;
+
     }
 
     .whywedata .data h3 {
@@ -160,6 +161,78 @@
         margin-right: 0;
     }
 
+    .containerright .heroImg {
+        display: none;
+    }
+
+    .containerleft h1 {
+        font-size: 4rem;
+    }
+
+    .containerright .courses {
+        display: none;
+    }
+
+    .containerright .arro3 {
+        display: none;
+    }
+
+    .containerright .arrow1 {
+        display: none;
+    }
+
+    .containerright .rating {
+        top: -15rem;
+        width: 10rem;
+        height: 10rem;
+
+    }
+
+    .containerright .arrow2 {
+        top: -6rem;
+        right: 2rem;
+        width: 22%;
+    }
+
+    .containerright .rating {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-right: .7rem;
+    }
+
+    .rating h3 {
+        font-size: 2rem;
+    }
+
+    .containerright .rating i {
+        font-size: 1.5rem;
+    }
+
+    .containerright .rating p {
+        font-size: 1rem;
+    }
+
+    .headercontainer {
+        padding: 1.5rem;
+        display: block;
+    }
+
+    .navbar-toggler {
+        float: right;
+        margin-top: 15px;
+    }
+
+    .navbar-toggler {
+        float: right;
+        margin-top: 15px;
+    }
+
+    .navigation {
+        flex-direction: column;
+
+    }
+
 }
 
 
@@ -167,6 +240,7 @@
 
 /* small:->=576 and <768 */
 @media screen and (min-width:576px) {
+
 
     .topaboutdata .logo .h3 {
         font-size: 1.5rem;
@@ -252,6 +326,77 @@
         margin-top: 0;
     }
 
+    .containerright .heroImg {
+        display: none;
+    }
+
+    .containerleft h1 {
+        font-size: 5rem;
+    }
+
+    .containerright .courses {
+        display: none;
+    }
+
+    .containerright .arro3 {
+        display: none;
+    }
+
+    .containerright .arrow1 {
+        display: none;
+    }
+
+    .containerright .rating {
+        top: -20rem;
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .containerright .arrow2 {
+        top: -9rem;
+        right: 2rem;
+    }
+
+    .containerright .rating {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .rating h3 {
+        font-size: 2.5rem;
+    }
+
+    .containerright .rating i {
+        font-size: 2rem;
+    }
+
+    .containerright .rating p {
+        font-size: 1.3rem;
+    }
+
+    .headercontainer {
+        padding: 1.5rem;
+        display: block;
+    }
+
+    .navigation {
+        flex-direction: column;
+
+    }
+
+    .navigation .icons {
+        display: flex;
+
+    }
+
+    .navbar-toggler {
+        float: right;
+        margin-top: 15px;
+    }
+
+
 }
 
 
@@ -304,6 +449,18 @@
         margin-top: 1rem;
     }
 
+    .containerleft h1 {
+        font-size: 5.5rem;
+    }
+
+    .containerright .rating {
+        top: -20rem;
+    }
+
+    .containerright .arrow2 {
+        top: -9rem;
+        right: 2rem;
+    }
 
 }
 
@@ -371,6 +528,36 @@
         margin: 8rem 0;
     }
 
+    .containerright .heroImg {
+        width: 590px;
+        display: block;
+    }
+
+    .containerright .courses {
+        left: 6rem;
+        display: block;
+    }
+
+    .containerright .arro3 {
+        left: 4rem;
+        display: block;
+    }
+
+    .containerright .arrow1 {
+        left: 12rem;
+        display: block;
+    }
+
+    .containerright .rating {
+        top: 8rem;
+    }
+
+    .containerright .arrow2 {
+        top: 20rem;
+        right: 4rem;
+    }
+
+
 }
 
 
@@ -378,7 +565,10 @@
 
 /* Extra large:->=1200 and <1400 */
 @media screen and (min-width:1200px) {
-
+    .navigation {
+        flex-direction: row;
+    }
+    
     .topaboutdata .logo .h3 {
         font-size: 2.3rem;
     }
@@ -405,9 +595,51 @@
         padding-bottom: 4.7rem;
     }
 
+    .containerright img {
+        width: 600px;
+    }
+
+    .containerleft h1 {
+        font-size: 6rem;
+    }
+
+    .containerright .courses {
+        left: 8rem;
+        display: block;
+    }
+
+    .containerright .arro3 {
+        left: 6rem;
+        display: block;
+    }
+
+    .containerright .arrow1 {
+        left: 16rem;
+        display: block;
+    }
+
+    .headercontainer {
+        display: flex;
+    }
 
 }
 
 
 /* Extra extra large:->=1400 */
-@media screen and (min-width:1400px) {}
+@media screen and (min-width:1400px) {
+    .containerright img {
+        width: 800px;
+    }
+
+    .containerright .courses {
+        left: 20rem;
+    }
+
+    .containerright .arro3 {
+        left: 18rem;
+    }
+
+    .containerright .arrow1 {
+        left: 28rem;
+    }
+}
